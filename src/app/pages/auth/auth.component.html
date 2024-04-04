@@ -1,0 +1,144 @@
+<!-- <div class="flex justify-center h-screen items-center overflow-hidden">
+
+    <div class="container">
+        <div class="cover" [ngClass]="{'rotate-active':
+         isRegister}">
+            <div class="front">
+                <img src="assets/images/Post-Recipe.png" alt="">
+                <div class="text">
+                    <span class="text-1">
+                        Share,Savor,and Create : Your Recipe Haven Awaits!
+                    </span>
+                    <span>Let's get Connected </span>
+                </div>
+            </div>
+            <div class="back">
+                <img src="assets/images/Post-Recipe.png" alt="">
+            </div>
+        </div>
+        <div class="form h-full">
+            <div class="form content h-full">
+                <div class="login-form">
+                    <h1 class="text-lg font-bold text-center 
+                    pb-8">Login</h1>
+
+                    <form [formGroup]="loginForm" (ngSubmit)="handleLogin()" class="">
+                        <div class="mb-4">
+                            <mat-form-field class="w-full">
+                                <mat-label class="text-grey-200">Email</mat-label>
+                                <input matInput placeholder=" Email here..." formControlName="email"
+                                    class="py-2 px-3 text-grey-200 mt-1 focus:shadow-outline">
+                            </mat-form-field>
+                        </div>
+                        <div class="mb-4">
+                            <mat-form-field class="w-full">
+                                <mat-label class="text-grey-200">Password</mat-label>
+                                <input matInput placeholder=" Password here..." formControlName="password"
+                                    class="py-2 px-3 text-grey-200 mt-1 focus:shadow-outline">
+                            </mat-form-field>
+                        </div>
+                        <div class="flex items-center gap-2 justify-center mt-9">
+                            <button class="w-full" mat-raised-button color="primary" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div>Don't have account ? <button (click)="togglePanel()" mat-button color="primary">Signup</button></div>
+                </div>
+                <div class="signup-form">
+                    <h1 class="text-lg font-bold text-center 
+                    pb-8">Register</h1>
+
+                    <form [formGroup]="registerForm" (ngSubmit)="handleRegister()" class="">
+                        <div class="mb-4">
+                            <mat-form-field class="w-full">
+                                <mat-label class="text-grey-200">Full Name</mat-label>
+                                <input matInput placeholder=" Enter FullName here..." formControlName="fullName"
+                                    class="py-2 px-3 text-grey-200 mt-1 focus:shadow-outline">
+                            </mat-form-field>
+                        </div>
+                        <div class="mb-4">
+                            <mat-form-field class="w-full">
+                                <mat-label class="text-grey-200">Email</mat-label>
+                                <input matInput placeholder=" Email here..." formControlName="email"
+                                    class="py-2 px-3 text-grey-200 mt-1 focus:shadow-outline">
+                            </mat-form-field>
+                        </div>
+                        <div class="mb-4">
+                            <mat-form-field class="w-full">
+                                <mat-label class="text-grey-200">Password</mat-label>
+                                <input matInput placeholder=" Password here..." formControlName="password"
+                                    class="py-2 px-3 text-grey-200 mt-1 focus:shadow-outline">
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <button class="w-full" mat-raised-button color="primary" type="submit">Register</button>
+                        </div>
+                    </form>
+                    <div> have account ? <button (click)="togglePanel()" mat-button color="primary">Login</button></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="flex justify-center h-screen items-center overflow-hidden">
+    <div class="container">
+        <div class="cover" [ngClass]="{'rotate-active': isRegister}">
+            <div class="front">
+                <img src="assets/images/Post-Recipe.png" alt="">
+                <div class="text">
+                    <span class="text-1">
+                        Share, Savor, and Create: Your Recipe Haven Awaits!
+                    </span>
+                    <span>Let's get Connected</span>
+                </div>
+            </div>
+            <div class="back">
+                <img src="assets/images/Post-Recipe.png" alt="">
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-content">
+                <section class="login-form">
+                    <h1 class="text-lg font-bold text-center pb-8">Login</h1>
+                    <form [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+                        <mat-form-field class="w-full mb-4">
+                            <mat-label>Email</mat-label>
+                            <input matInput type="email" formControlName="email" placeholder="Enter your email">
+                        </mat-form-field>
+                        <mat-form-field class="w-full mb-4">
+                            <mat-label>Password</mat-label>
+                            <input matInput type="password" formControlName="password" placeholder="Enter your password">
+                        </mat-form-field>
+                        <div class="flex items-center gap-2 justify-center mt-9">
+                            <button class="w-full" mat-raised-button color="primary" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <div>Don't have an account? <button (click)="togglePanel()" mat-button color="primary">Signup</button></div>
+                </section>
+                <section class="signup-form">
+                    <h1 class="text-lg font-bold text-center pb-8">Register</h1>
+                    <form [formGroup]="registerForm" (ngSubmit)="handleRegister()">
+                        <mat-form-field class="w-full mb-4">
+                            <mat-label>Full Name</mat-label>
+                            <input matInput type="text" formControlName="fullName" placeholder="Enter your full name">
+                        </mat-form-field>
+                        <mat-form-field class="w-full mb-4">
+                            <mat-label>Email</mat-label>
+                            <input matInput type="email" formControlName="email" placeholder="Enter your email">
+                        </mat-form-field>
+                        <mat-form-field class="w-full mb-4">
+                            <mat-label>Password</mat-label>
+                            <input matInput type="password" formControlName="password" placeholder="Enter your password">
+                        </mat-form-field>
+                                                  
+                        <div>
+                            <button class="w-full" mat-raised-button color="primary" type="submit">Register</button>
+                        </div>
+                    </form>
+                    <div>Already have an account ? <button (click)="togglePanel()" mat-button color="primary">Login</button></div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
